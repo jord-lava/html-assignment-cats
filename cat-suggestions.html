@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Suggestions</title>
+  </head>
+  <body>
+    <!-- cat suggestions/forms-->
+    <header>
+      <heading>
+        <h1>Cat Suggestions</h1>
+        <nav>
+          <ul>
+            <!--links back to other pages-->
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="images.html">Pictures</a></li>
+            <li><a href="cat-suggestions.html">Cat Suggestions</a></li>
+          </ul>
+        </nav>
+      </heading>
+    </header>
+
+    <main>
+      <!--note forms have name, id, and method-->
+      <form name="cat-suggestion" id="suggestions" method="get">
+        <!--label has for="the id of the thing your attaching it to"-->
+        <label for="breed">What cat breed do you recommend:</label>
+        <!--inputs have type="type of input" name and id-->
+        <!--text inputs have a box for users to put their answers in-->
+        <input type="text" name="type-of-cat" id="breed" />
+
+        <p>Have you had this breed of cat before:</p>
+        <!--radio buttions you can select one
+        note: inmortant that all radio buttons in the same group have the same name-->
+        <input type="radio" name="yes-no" id="yes" value="yes" />
+        <label for="yes">Yes</label>
+
+        <input type="radio" name="yes-no" id="no" value="no" />
+        <label for="no">No</label>
+        <br />
+        <br />
+        <br />
+        <!--fieldset make a box around a group of _______
+          note:put the form and name-->
+        <fieldset form="cat-suggestion" name="characteristics">
+          <!--legend is the words on the fieldset NOT inside-->
+          <legend>
+            What characteristic does this cat have [check all that apply]
+          </legend>
+
+          <!--checkbox has name, id, and value
+          value is what the value of the box would be if it was selcted-->
+          <input type="checkbox" name="tails" id="tail" value="tail" />
+          <label for="tail">A tail</label>
+          <br />
+
+          <input
+            type="checkbox"
+            name="long-hair"
+            id="hairy"
+            value="long-hair" />
+          <label for="hairy">Long hair</label>
+          <br />
+
+          <input
+            type="checkbox"
+            name="short-hair"
+            id="hair"
+            value="short-hair" />
+          <label for="hair">Short hair</label>
+          <br />
+
+          <input type="checkbox" name="small cat" id="tiny" value="small" />
+          <label for="tiny">Small cat</label>
+          <br />
+
+          <input type="checkbox" name="large cat" id="big" value="large" />
+          <label for="big">Big cat</label>
+          <br />
+        </fieldset>
+        <br />
+
+        <label for="cat-color">Pick the color of the cats fur</label>
+        <!--color makes a color selector that the user can use (there is also a color-picker!!!)-->
+        <input type="color" name="cats-color" id="cat-color" />
+        <br />
+        <br />
+        <br />
+
+        <!--note:submit and reset buttons NEED to be inside of the form its submitting/reseting-->
+        <!--submit button-->
+        <input
+          type="submit"
+          name="submitButton"
+          id="submit"
+          value="click this to submit your suggestion" />
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <!--reset button-->
+        <input
+          type="reset"
+          name="clearForm"
+          id="clear"
+          value="click this to clear all inputs" />
+      </form>
+    </main>
+  </body>
+</html>
