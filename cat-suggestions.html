@@ -9,36 +9,35 @@
   <body>
     <!-- cat suggestions/forms-->
     <header>
-      <heading>
-        <h1>Cat Suggestions</h1>
-        <nav>
-          <ul>
-            <!--links back to other pages-->
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="images.html">Pictures</a></li>
-            <li><a href="cat-suggestions.html">Cat Suggestions</a></li>
-          </ul>
-        </nav>
-      </heading>
+      <h1>Cat Suggestions</h1>
+      <nav>
+        <ul>
+          <!--links back to other pages-->
+          <li><a href="index.html">Home Page</a></li>
+          <li><a href="images.html">Pictures</a></li>
+          <li><a href="cat-suggestions.html">Cat Suggestions</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <!--note forms have name, id, and method-->
       <form name="cat-suggestion" id="suggestions" method="get">
-        <!--label has for="the id of the thing your attaching it to"-->
-        <label for="breed">What cat breed do you recommend:</label>
-        <!--inputs have type="type of input" name and id-->
-        <!--text inputs have a box for users to put their answers in-->
-        <input type="text" name="type-of-cat" id="breed" />
+        <fieldset from="cat-suggestions" name="breed-of-cat-yes-no">
+          <legend>What breed of cat do you recommend:</legend>
+          <!-- ask user for the type of cat they are recomending -->
+          <input type="text" name="type-of-cat" id="breed" />
 
-        <p>Have you had this breed of cat before:</p>
-        <!--radio buttions you can select one
-        note: inmortant that all radio buttons in the same group have the same name-->
-        <input type="radio" name="yes-no" id="yes" value="yes" />
-        <label for="yes">Yes</label>
+          <p>Have you had this breed of cat before:</p>
+          <!--radio buttions you can select one
+          note: inmortant that all radio buttons in the same group have the same name-->
+          <input type="radio" name="yes-no" id="yes" value="yes" />
+          <!--label has for="the id of the thing your attaching it to"-->
+          <label for="yes">Yes</label>
 
-        <input type="radio" name="yes-no" id="no" value="no" />
-        <label for="no">No</label>
+          <input type="radio" name="yes-no" id="no" value="no" />
+          <label for="no">No</label>
+        </fieldset>
         <br />
         <br />
         <br />
